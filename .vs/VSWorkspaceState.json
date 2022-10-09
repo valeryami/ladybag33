@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\app",
+    "\\external",
+    "\\external\\googletest",
+    "\\external\\googletest\\googlemock",
+    "\\external\\googletest\\googlemock\\msvc",
+    "\\external\\googletest\\googlemock\\msvc\\2010"
+  ],
+  "SelectedNode": "\\external\\googletest\\googlemock\\msvc\\2010\\gmock.sln",
+  "PreviewInSolutionExplorer": false
+}
