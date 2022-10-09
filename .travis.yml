@@ -1,2 +1,8 @@
 language:
   - cpp
+  
+script:
+  - qmake
+  - make
+  - ./tests/tests
+  
