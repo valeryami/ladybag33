@@ -99,6 +99,49 @@ TEST(o_win, diagonal)
     EXPECT_STREQ(text.c_str(), output_text.c_str());
 }
 
+TEST(draw, draw)
+{
+    std::string output_text = "Ничья!!!";
 
+    testing::internal::CaptureStdout();
+
+    int select[]={5,7,2,8,9,6,4,1,3};
+    int size=sizeof(select)/4;
+
+    tictactoe(select, size);
+    std::string text = testing::internal::GetCapturedStdout();
+
+    EXPECT_STREQ(text.c_str(), output_text.c_str());
+}
+
+TEST(minus, out_pos)
+{
+    std::string output_text = "Невозможный ход";
+
+    testing::internal::CaptureStdout();
+
+    int select[]={10};
+    int size=sizeof(select)/4;
+
+    tictactoe(select, size);
+    std::string text = testing::internal::GetCapturedStdout();
+
+    EXPECT_STREQ(text.c_str(), output_text.c_str());
+}
+
+TEST(minus, game_is_not_finished)
+{
+    std::string output_text = "Невозможно выявить победителя";
+
+    testing::internal::CaptureStdout();
+
+    int select[]={7,6,5};
+    int size=sizeof(select)/4;
+
+    tictactoe(select, size);
+    std::string text = testing::internal::GetCapturedStdout();
+
+    EXPECT_STREQ(text.c_str(), output_text.c_str());
+}
 
 #endif
