@@ -7,5 +7,3 @@
 [![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=ladybag33&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=ladybag33)
 
 [![Coverage Status](https://coveralls.io/repos/github/valeryami/ladybag33/badge.svg?branch=main)](https://coveralls.io/github/valeryami/ladybag33?branch=main)
-
-[![Coverage Status](https://coveralls.io/repos/github/valeryami/ladybag2/badge.svg?branch=main)](https://coveralls.io/github/valeryami/ladybag2?branch=main)
