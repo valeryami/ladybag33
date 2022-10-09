@@ -7,7 +7,7 @@ before_install:
 script:
   - ./configure --enable-gcov && make && make check
 after_success:
-  - npm run coveralls
+  - coveralls --root . -E ".*external.*" -E ".*tests.*"
 script:
   - qmake
   - make
